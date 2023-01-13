@@ -1,7 +1,7 @@
-// Copyright (c) 2023 Ashley Monaghan and Ekaterina Chernykh All rights reserved
+// Copyright (c) 2022 Ashley Monaghan All rights reserved
 //
-// Created by: Ashley Monaghan and Ekaterina Chernykh
-// Created on: Jan 2023
+// Created by: Ashley Monaghan
+// Created on: Oct 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Final-Project-Ashley-Ekat/sw.js", {
-    scope: "/ICS2O-Final-Project-Ashley-Ekat/",
+  navigator.serviceWorker.register("/rough-copy/sw.js", {
+    scope: "/rough-copy/",
   })
 }
 
