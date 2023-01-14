@@ -1,7 +1,7 @@
-// Copyright (c) 2022 Ashley Monaghan All rights reserved
+// Copyright (c) 2023 Ashley Monaghan All rights reserved
 //
 // Created by: Ashley Monaghan
-// Created on: Oct 2022
+// Created on: Jan 2023
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -33,6 +33,9 @@ function crystalButton() {
   ) {
     document.getElementById("crystalInfo").innerHTML =
       "Birthday doesn't exist, sorry. :("
+  } else if (inputedMonth == "Month" || inputedDay == "Day") {
+    document.getElementById("zodiacInfo").innerHTML =
+      "Please select your birthday in the selection boxes above..."
   } else if (inputedMonth == "January") {
     document.getElementById("crystalInfo").innerHTML = "Garnet"
   } else if (inputedMonth == "February") {
@@ -57,9 +60,6 @@ function crystalButton() {
     document.getElementById("crystalInfo").innerHTML = "Topaze"
   } else if (inputedMonth == "December") {
     document.getElementById("crystalInfo").innerHTML = "Turquoise"
-  } else if (inputedMonth == "Month" && inputedDay == "Day") {
-    document.getElementById("zodiacInfo").innerHTML =
-      "Please select your birthday in the selection boxes above..."
   } else {
     document.getElementById("zodiacInfo").innerHTML =
       "Something went wrong. Please try again."
