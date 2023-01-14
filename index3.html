@@ -13,10 +13,7 @@
       rel="canonical"
       href="https://ashley-monaghan.github.io/ICS2O-Final-Project-Ashley-Ekat/"
     />
-    <link
-      rel="manifest"
-      href="/ICS2O-Final-Project-Ashley-Ekat/manifest.webmanifest"
-    />
+    <link rel="manifest" href="/ICS2O-Final-Project-Ashley-Ekat/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -57,21 +54,24 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">
             <div class="content">
-              <a class="home" href="./index.html">Home Page!</a>
+              <a class="home" href="./index.html">Back to Home Page</a> 
             </div>
           </span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <!-- Title Text-->
-        <h1><u>What's Your Zodiac Sign?</u></h1>
-        <h5>»» ────── ஓ๑♥๑ஓ ────── ««</h5>
-        <h4>
-          Please enter your birthday in the dropdown selection boxes below, to
-          find out what your Zodiac sign is!
-        </h4>
+        <h2><u>What's Your Zodiac Sign?</u></h2>
+          <img
+            src="./images/zodiacs.webp" 
+            alt="Zodiacs" 
+            style="width: 10%" 
+            onclick="zodiac()"
+          > 
+      <h5> »» ────── ஓ๑♥๑ஓ ────── ««</h5>
+        <h4>Please enter your birthday in the dropdown selection boxes below, to find out what your Zodiac sign is!</h4>        
         <p></p>
-        <br />
+        <br>
         <label for="month">Select the Month and Day:</label>
         <select name="month" id="month">
           <option value="Month">Month</option>
@@ -128,10 +128,10 @@
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="zodiacButton()"
         >
-          Click!
+        Click!
         </button>
         <!-- Border-->
-        <h5>»» ────── ஓ๑♥๑ஓ ────── ஓ๑♥๑ஓ ────── ஓ๑♥๑ஓ ────── ««</h5>
+        <h5> »» ────── ஓ๑♥๑ஓ ────── ஓ๑♥๑ஓ ────── ஓ๑♥๑ஓ ────── ««</h5>
         <!-- basic text -->
         <p></p>
         <div id="zodiacInfo"></div>

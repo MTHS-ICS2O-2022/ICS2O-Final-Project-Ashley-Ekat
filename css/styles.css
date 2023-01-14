@@ -52,6 +52,14 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: rgb(255 255 255);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 h4 {
   color: rgb(253 253 253);
   font-family: Helvetica, Arial, sans-serif;
@@ -88,8 +96,20 @@ img {
 
 a.home {
   color: #fff;
-  text-align: right;
-  font-size: x-large;
+  font-size: medium;
   text-decoration: none;
+}
+
+a.info1 {
+  color: #fff;
+  float: left;
+  font-size: medium;
+  text-decoration: none;
+}
+
+a.info2 {
+  color: #fff;
   float: right;
+  font-size: medium;
+  text-decoration: none;
 }
