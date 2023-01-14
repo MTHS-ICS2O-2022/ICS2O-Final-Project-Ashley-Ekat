@@ -3,6 +3,8 @@
 * This file contains the CSS for index.html
 */
 
+/* mdl stuff */
+
 .mdl-layout__header-row {
   align-items: center;
   justify-content: center;
@@ -21,8 +23,25 @@
   opacity: 0.01;
 }
 
+mdl-textfield {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  padding-top: 5pt;
+}
+
+form {
+  color: #fff;
+}
+
+div {
+  color: #fff;
+}
+
+/* Text colour stuff */
+
 body {
-  background-color: rgb(208 160 208);
+  background-color: #c8a2c8;
 }
 
 h1 {
@@ -49,21 +68,6 @@ p {
   padding-top: 15pt;
 }
 
-mdl-textfield {
-  color: #fff;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  padding-top: 5pt;
-}
-
-form {
-  color: #fff;
-}
-
-div {
-  color: #fff;
-}
-
 h5 {
   color: rgb(253 253 253);
   font-family: Helvetica, Arial, sans-serif;
@@ -72,8 +76,20 @@ h5 {
   text-align: center;
 }
 
+/* Images */
+
 img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Links */
+
+a.home {
+  color: #fff;
+  text-align: right;
+  font-size: x-large;
+  text-decoration: none;
+  float: right;
 }
