@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Final-Project-Ashley-Ekat/sw.js", {
-    scope: "/ICS2O-Final-Project-Ashley-Ekat/",
+  navigator.serviceWorker.register("/rough-copy/sw.js", {
+    scope: "/rough-copy/",
   })
 }
 
