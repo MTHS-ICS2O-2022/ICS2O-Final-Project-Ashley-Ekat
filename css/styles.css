@@ -112,6 +112,12 @@ img {
   margin-left: auto;
 }
 
+#image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Links */
 
 a.home {
