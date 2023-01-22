@@ -23,7 +23,7 @@
   opacity: 0.01;
 }
 
-mdl-textfield {
+.mdl-textfield {
   color: #fff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
@@ -84,9 +84,35 @@ h5 {
   text-align: center;
 }
 
+#titletext {
+  color: rgb(253 253 253);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#titledate {
+  color: rgb(253 253 253);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#infotext {
+  color: rgb(253 253 253);
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
 /* Images */
 
 img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#image {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -119,4 +145,11 @@ a.filler {
   float: left;
   font-size: small;
   text-decoration: none;
+}
+
+a.elementpage {
+  color: #fff;
+  float: right;
+  font-size: small;
+  text-decoration: underline;
 }
