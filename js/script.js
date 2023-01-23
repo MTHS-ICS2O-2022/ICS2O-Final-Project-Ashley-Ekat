@@ -762,7 +762,6 @@ function elementsbutton() {
       '<img src="./images/elements/air.jpg" alt="air" width="25%" height="23%" />'
   } else {
     document.getElementById("elementName").innerHTML =
->>>>>>> 830345924485ad2a7684ef52cd0d49c3f116c115
       "Something went wrong. Please try again."
     document.getElementById("elementInfo1").innerHTML = ""
   }
