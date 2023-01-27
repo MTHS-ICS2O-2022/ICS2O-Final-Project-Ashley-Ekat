@@ -10,13 +10,13 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/rough-copy/sw.js", {
-    scope: "/rough-copy/",
+  navigator.serviceWorker.register("//sw.js", {
+    scope: "//",
   })
 }
 
 /**
- * This function displays an alert for index2
+ * This function displays an alert for crystal page
  * crystalInfo
  */
 function crystalButton() {
@@ -41,6 +41,7 @@ function crystalButton() {
       "Please select your birthday in the selection boxes above..."
     document.getElementById("crystalInfo1").innerHTML = ""
     document.getElementById("crystalInfo2").innerHTML = ""
+    document.getElementById("image").innerHTML = ""
   } else if (inputedMonth == "January") {
     document.getElementById("crystalName").innerHTML = "Garnet!"
     document.getElementById("crystalInfo1").innerHTML =
@@ -147,7 +148,7 @@ function crystalButton() {
 }
 
 /**
- * This function displays an alert for index3
+ * This function displays an alert for zodiac page
  * zodiacInfo
  */
 function zodiacButton() {
@@ -164,10 +165,12 @@ function zodiacButton() {
   ) {
     document.getElementById("zodiacName").innerHTML =
       "This day doesn't exist..."
+    document.getElementById("zodiacDate").innerHTML = ""
     document.getElementById("zodiacInfo1").innerHTML = ""
     document.getElementById("zodiacInfo2").innerHTML = ""
     document.getElementById("zodiacInfo3").innerHTML = ""
     document.getElementById("zodiacInfo4").innerHTML = ""
+    document.getElementById("image").innerHTML = ""
   } else if (
     (inputedMonth == "January" &&
       (inputedDay == "20" ||
@@ -210,7 +213,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Air"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Uranus"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/aquarius.png" alt="aquarius" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/aquarius.png" alt="aquarius" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "February" &&
       (inputedDay == "19" ||
@@ -252,9 +255,10 @@ function zodiacButton() {
       "Pisces' behaviour changes based on who they’re around. They are unlimited, weakening themselves with larger personalities to avoid having to form readable identities. Most of the traits usually associated with Pisces (dreaminess, emotionality, imagination) are internal processes that are difficult to observe from the outside. Therefore hard to read. Pisces are mostly inward-facing. They are not self-absorbed, but they are absorbed in themselves."
     document.getElementById("zodiacInfo2").innerHTML = "Symbol: The Fishes"
     document.getElementById("zodiacInfo3").innerHTML = "Element: Water"
-    document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Neptune"
+    document.getElementById("zodiacInfo4").innerHTML =
+      "Ruling Planet: Neptune <p>ㅤ</p>"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/pisces.png" alt="pisces" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/pisces.png" alt="pisces" width="10%" height="7%" />'
   } else if (
     (inputedMonth == "March" &&
       (inputedDay == "21" ||
@@ -295,9 +299,10 @@ function zodiacButton() {
       "Aries do things their own way. They are highly competitive and honest. They throw themselves at the world eagerly and without fear. Aries are driven by a desire to prove themselves and their strength. They have high energy and are very ambitious. They naturally take charge because they are good at initiating new projects. They can also be impatient, but are naturally active and don’t like to waste time. While they want competition, they don’t like to play games. They are highly self-aware, have strong opinions and are always ready to defend themselves."
     document.getElementById("zodiacInfo2").innerHTML = "Symbol: The Ram"
     document.getElementById("zodiacInfo3").innerHTML = "Element: Fire"
-    document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Mars"
+    document.getElementById("zodiacInfo4").innerHTML =
+      "Ruling Planet: Mars <p>ㅤ</p>"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/aries.png" alt="aries" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/aries.png" alt="aries" width="11%" height="9%" />'
   } else if (
     (inputedMonth == "April" &&
       (inputedDay == "20" ||
@@ -341,7 +346,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Earth"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Venus"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/aries.png" alt="aries" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/taurus.png" alt="taurus" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "May" &&
       (inputedDay == "21" ||
@@ -385,7 +390,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Air"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Mercury"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/gemini.png" alt="gemini" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/gemini.png" alt="gemini" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "June" &&
       (inputedDay == "21" ||
@@ -430,7 +435,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Water"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Moon"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/cancer.png" alt="cancer" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/cancer.png" alt="cancer" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "July" &&
       (inputedDay == "23" ||
@@ -472,9 +477,10 @@ function zodiacButton() {
       "Leos are bold, warm, and loving. They are also the ultimate performers. They can dazzle with the theatrical flair of a Broadway star and the charisma of a politician. They have big personalities. Leos put ambition into everything they do. They are ruled by the heart. Their actions are natural and effortless because they are confident and trust their instincts. When a Leo is hurting, it shows. They will use their anger as a protective wall to shield their vulnerabilities. They want to be shown as unbreakable because they are scared of admitting vulnerability, needing things from other people, or being incomplete."
     document.getElementById("zodiacInfo2").innerHTML = "Symbol: The Lion"
     document.getElementById("zodiacInfo3").innerHTML = "Element: Fire"
-    document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Sun"
+    document.getElementById("zodiacInfo4").innerHTML =
+      "Ruling Planet: Sun <p>ㅤ</p>"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/leo.png" alt="leo" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/leo.png" alt="leo" width="10%" height="10%" />'
   } else if (
     (inputedMonth == "August" &&
       (inputedDay == "23" ||
@@ -518,7 +524,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Earth"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Mercury"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/virgo.png" alt="virgo" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/virgo.png" alt="virgo" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "September" &&
       (inputedDay == "23" ||
@@ -562,7 +568,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Air"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Venus"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/libra.png" alt="libra" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/libra.png" alt="libra" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "October" &&
       (inputedDay == "23" ||
@@ -605,7 +611,7 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Water"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Pluto"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/virgo.png" alt="virgo" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/virgo.png" alt="virgo" width="15%" height="15%" />'
   } else if (
     (inputedMonth == "November" &&
       (inputedDay == "22" ||
@@ -647,9 +653,10 @@ function zodiacButton() {
       "Sagittarians are the ultimate philosophers of science. They will always choose principles over feelings and will often question who they are. They are explorers of the human condition and are unafraid of change. Sagittarians feel like the world is their playground. They love to explore the unknown. They want to understand how the world works. Sagittarians are reckless in their pursuit of what they want and often end up doing and experiencing things that fight conceptions of the possible. Sagittarians understand that knowledge comes in two forms: the shallow, disposable kind that comes from external sources, and the kind that comes from within. They know that external knowledge can be easily gained while internal knowledge is exponentially deeper and more powerful."
     document.getElementById("zodiacInfo2").innerHTML = "Symbol: The Archer"
     document.getElementById("zodiacInfo3").innerHTML = "Element: Fire"
-    document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Jupiter"
+    document.getElementById("zodiacInfo4").innerHTML =
+      "Ruling Planet: Jupiter <p>ㅤ</p>"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/sagittarius.webp" alt="sagittarius" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/sagittarius.webp" alt="sagittarius" width="10%" height="10%" />'
   } else if (
     (inputedMonth == "December" &&
       (inputedDay == "22" ||
@@ -691,26 +698,30 @@ function zodiacButton() {
     document.getElementById("zodiacInfo3").innerHTML = "Element: Earth"
     document.getElementById("zodiacInfo4").innerHTML = "Ruling Planet: Saturn"
     document.getElementById("image").innerHTML =
-      '<img src="./images/zodiacs/capricorn.png" alt="capricorn" width="25%" height="23%" />'
+      '<img src="./images/zodiacs/capricorn.png" alt="capricorn" width="15%" height="15%" />'
   } else if (inputedMonth == "Month" || inputedDay == "Day") {
     document.getElementById("zodiacName").innerHTML =
       "Please select your birthday in the selection boxes above..."
     document.getElementById("zodiacInfo1").innerHTML = ""
+    document.getElementById("zodiacDate").innerHTML = ""
     document.getElementById("zodiacInfo2").innerHTML = ""
     document.getElementById("zodiacInfo3").innerHTML = ""
     document.getElementById("zodiacInfo4").innerHTML = ""
+    document.getElementById("image").innerHTML = ""
   } else {
     document.getElementById("zodiacName").innerHTML =
       "Something went wrong. Please try again."
+    document.getElementById("zodiacDate").innerHTML = ""
     document.getElementById("zodiacInfo1").innerHTML = ""
     document.getElementById("zodiacInfo2").innerHTML = ""
     document.getElementById("zodiacInfo3").innerHTML = ""
     document.getElementById("zodiacInfo4").innerHTML = ""
+    document.getElementById("image").innerHTML = ""
   }
 }
 
 /**
- * This function displays an alert for index3
+ * This function displays an alert for elements page
  * elementsinfo
  */
 function elementsbutton() {
@@ -720,6 +731,7 @@ function elementsbutton() {
     document.getElementById("elementName").innerHTML =
       "Please select your Zodiac in the selection boxe above..."
     document.getElementById("elementInfo1").innerHTML = ""
+    document.getElementById("image").innerHTML = ""
   } else if (
     inputedZodiac == "Cancer" ||
     inputedZodiac == "Scorpio" ||
@@ -729,7 +741,7 @@ function elementsbutton() {
     document.getElementById("elementInfo1").innerHTML =
       "Cancer, Scorpio, and Pisces represent the element of Water. They are the most emotional signs within the zodiac and symbolize the fluidity of their element. They are encouraging and thoughtful which allows them to take on the happiness and sorrow of those that they connect with. Cancer forges a close connection to its origins at home. It values the act of care and cherishes its given and chosen families. Scorpio is skilled in the way it understands complicated thoughts and feelings. Its emotions drive all of its actions forward, making Scorpio determined. Finally, Pisces is extra sensitive. They tend to adopt a dreamer attitude but are compassionate. Water signs come together to form the most open-minded signs within the zodiac. It is possible that they might be overlooked due to their changing forms, but they are always aware of how others are feeling."
     document.getElementById("image").innerHTML =
-      '<img src="./images/elements/water.jpg" alt="water" width="25%" height="23%" />'
+      '<img src="./images/elements/water.jpg" alt="water" width="23%" height="23%" />'
   } else if (
     inputedZodiac == "Taurus" ||
     inputedZodiac == "Virgo" ||
@@ -739,7 +751,7 @@ function elementsbutton() {
     document.getElementById("elementInfo1").innerHTML =
       "Taurus, Virgo, and Capricorn, come together to represent the useful and reliable qualities of the Earth element. As the most grounded element, Earth signs respond well to the things that they can clearly touch and see. This is what makes them sensual beings who are prone to deep connections. You can always count on an Earth sign to be there, as they often believe they have a responsibility to support those within their sphere. They value logic and embody dependability. Taurus is the most pragmatic Earth sign, it finds comfort in planning and conceptualizing each step of its journey. Virgo is similarly practical and hardworking. It celebrates perpetual dedication but sometimes falls victim to overburdening. Finally, Capricorn often takes the position of an overseer. It is cautious and realistic. Earth signs tend to work with what they have, they stray away from bombastic ideals and pursue linear trains of thought and action."
     document.getElementById("image").innerHTML =
-      '<img src="./images/elements/earth.jpg" alt="earth" width="25%" height="23%" />'
+      '<img src="./images/elements/earth.jpg" alt="earth" width="23%" height="23%" />'
   } else if (
     inputedZodiac == "Leo" ||
     inputedZodiac == "Sagittarius" ||
@@ -749,7 +761,7 @@ function elementsbutton() {
     document.getElementById("elementInfo1").innerHTML =
       "Aries, Leo, and Sagittarius represent the passionate Fire element. As expected, Fire signs are recognized for their spontaneity, creativity, and courage. They are often difficult to silence or contain and typically say big ideas with no fear. Sagittarius is known as the easily silenced Fire sign, so they are more adaptable than the other zodiacs but still is determined. Leo, on the other hand, is the fixed Fire sign and enthusiastically represents passion and loyalty. Lastly, Aries is the most creative Fire sign. They spend no time remaining in the past and strives on into the future with a sense of certainty and confidence. Altogether, Fire signs are not afraid to say what they think and generate their own creative path."
     document.getElementById("image").innerHTML =
-      '<img src="./images/elements/fire.jpg" alt="fre" width="25%" height="23%" />'
+      '<img src="./images/elements/fire.jpg" alt="fre" width="25%" height="25%" />'
   } else if (
     inputedZodiac == "Libra" ||
     inputedZodiac == "Gemini" ||
@@ -759,10 +771,11 @@ function elementsbutton() {
     document.getElementById("elementInfo1").innerHTML =
       "Gemini, Libra, and Aquarius represent the intellectual and social Air signs. They tend to allow the universe to lead them in any direction it pleases, and remain at peace wherever they land. Air signs are curious; they seek out connection and knowledge. Most importantly, they are amazing communicators who can engage with almost anyone. Gemini is the easily silenced Air sign, its nature to take on different personalities lends to its adaptability and status as the social butterfly of the zodiac. Libra is often referred to as the basic Air sign, it is more action-oriented and aims to have a balanced life. Libra won't hesitate to find the perfect balance by taking the time to organize and plan. Aquarius is the fixed Air sign, representing a free-spirited attitude and an association with free thinking. However, Aquarius is also disciplined in the way they handle serious cases like money and love. Altogether, Air signs are expert empathizers. They harmonize all that they engage with at an impressive speed and move through life with a sense of trust in the universe."
     document.getElementById("image").innerHTML =
-      '<img src="./images/elements/air.jpg" alt="air" width="25%" height="23%" />'
+      '<img src="./images/elements/air.jpg" alt="air" width="20%" height="20%" />'
   } else {
     document.getElementById("elementName").innerHTML =
       "Something went wrong. Please try again."
     document.getElementById("elementInfo1").innerHTML = ""
+    document.getElementById("image").innerHTML = ""
   }
 }
